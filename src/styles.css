@@ -1,69 +1,44 @@
-body {
-   font-family: Arial, sans-serif;
-   text-align: center;
- }
- 
- .container {
-   max-width: 800px;
-   margin: auto;
-   padding: 20px;
- }
- 
- .search-bar input {
-   padding: 10px;
-   width: 300px;
-   margin-right: 10px;
- }
- 
- button {
-   padding: 10px;
-   cursor: pointer;
- }
- 
- .image-grid {
-   display: flex;
-   flex-wrap: wrap;
-   gap: 10px;
-   justify-content: center;
-   margin-top: 20px;
- }
- 
- .image-item {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
- }
- 
- .image-item img {
-   width: 150px;
-   height: 100px;
-   cursor: pointer;
-   border-radius: 5px;
-   border: 1px solid #ddd;
- }
- 
- .caption-container {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   margin-top: 20px;
- }
- 
- .canvas-container {
-   border: 1px solid #000;
-   margin-bottom: 10px;
-   width: 600px;
-   height: 400px;
- }
- 
- .caption-controls {
-   margin-top: 10px;
- }
- 
- .download-btn {
-   margin-top: 10px;
-   background-color: #28a745;
-   color: white;
-   border: none;
-   padding: 10px;
- }
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);  
+  gap: 10px;  
+  padding: 10px;
+}
+
+.image-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.image-item img {
+  width: 100%;
+  height: auto;
+   max-width: 3000px; 
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.image-item button {
+  margin-top: 5px;
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.image-item button:hover {
+  background-color: #0056b3;
+}
+
+.intro{
+  text-align: left;
+  float: left;
+}
+
+.caption-btn{
+  
+}
